@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #002b5b, #00509d);
+    color: #fff;
+}
+
+/* Header y menú */
+header {
+    background: #021d3a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #00509d;
+    border-radius: 5px;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background: white;
+    color: #000;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    min-width: 140px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    color: #021d3a;
+    padding: 10px;
+    display: block;
+}
+
+.submenu li a:hover {
+    background: #00509d;
+    color: white;
+}
+
+/* Sección principal */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background: #021d3a;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hero-img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Menú hamburguesa (móvil) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #021d3a;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .submenu {
+        position: static;
+    }
+}
+
+/* Footer */
+footer {
+    background: #021d3a;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+}
