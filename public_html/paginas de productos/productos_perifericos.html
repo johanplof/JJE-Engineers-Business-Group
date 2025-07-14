@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periféricos - JJE Engineers Business Group</title>
+    <link rel="icon" type="image/x-icon" href="../logos/icono.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../ajustes css/ajustes_productos_perifericos.css">
+    <script defer src="../ajustes js/afuncion.js"></script>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">JJE Engineers Business Group</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+        <ul id="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown(event)">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Consultoría en TI</a></li>
+                    <li><a href="#">Capacitación</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown(event)">Productos</a>
+                <ul class="submenu productos-grid">
+                    <li class="dropdown-sub">
+                        <a href="../paginas de productos/productos_Hardware.html">Hardware</a>
+                        <ul class="submenu-sub">
+                            <li><a href="paginas/hardware/discos-ssd.html">Discos SSD</a></li>
+                            <li><a href="paginas/hardware/cables-hdmi-usb.html">Cables HDMI/USB</a></li>
+                            <li><a href="paginas/hardware/cargadores.html">Cargadores</a></li>
+                            <li><a href="paginas/hardware/forros.html">Forros</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-sub">
+                        <a href="../paginas de productos/productos_perifericos.html">Periféricos</a>
+                        <ul class="submenu-sub">
+                            <li><a href="paginas/perifericos/teclados.html">Teclados</a></li>
+                            <li><a href="paginas/perifericos/mouse.html">Mouse</a></li>
+                            <li><a href="paginas/perifericos/auriculares.html">Auriculares</a></li>
+                            <li><a href="paginas/perifericos/camaras-web.html">Cámaras Web</a></li>
+                            <li><a href="paginas/perifericos/microfonos.html">Micrófonos</a></li>
+                            <li><a href="paginas/perifericos/audifonos-bt.html">Audífonos BT</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-sub">
+                        <a href="../paginas de productos/productos_licencias.html">Licencias</a>
+                        <ul class="submenu-sub">
+                            <li><a href="../paginas de productos/productos_licencias.html">Windows 10/11</a></li>
+                            <li><a href="../paginas de productos/productos_licencias.html">Office 365</a></li>
+                            <li><a href="../paginas de productos/productos_licencias.html">Office 2019/2021</a></li>
+                            <li><a href="../paginas de productos/productos_licencias.html">Windows Server</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown(event)">Soporte</a>
+                <ul class="submenu">
+                    <li><a href="#">Soporte Nivel 1</a></li>
+                    <li><a href="#">Soporte Nivel 2</a></li>
+                    <li><a href="#">Soporte Remoto</a></li>
+                    <li><a href="#">Soporte en Sitio</a></li>
+                </ul>
+            </li>
+            <li><a href="../nosotros.html">Nosotros</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown(event)">Iniciar Sesión</a>
+                <ul class="submenu">
+                    <li><a href="../login.html">Usuario</a></li>
+                    <li><a href="#">Administrador</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor-productos">
+    <h1>Periféricos de Alta Calidad</h1>
+    <p>Complementa tu experiencia informática con nuestros periféricos premium.</p>
+
+   <section class="galeria-productos">
+    <div class="producto">
+        <!-- Imagen PNG del producto: coloca aquí el archivo PNG para el Teclado Mecánico RGB -->
+        <img src="../fotos de los productos/teclado.jpg" alt="Teclado Mecánico RGB">
+        <h2>Teclado Mecánico RGB</h2>
+        <p>Precisión y estilo para tus sesiones de trabajo o gaming.</p>
+    </div>
+
+    <div class="producto">
+        <!-- Imagen PNG del producto: coloca aquí el archivo PNG para el Mouse Óptico Inalámbrico -->
+        <img src="../fotos de los productos/raton.jpg" alt="Mouse Óptico Inalámbrico">
+        <h2>Mouse Óptico Inalámbrico</h2>
+        <p>Comodidad y precisión para el día a día.</p>
+    </div>
+
+    <div class="producto">
+        <!-- Imagen PNG del producto: coloca aquí el archivo PNG para Auriculares Bluetooth -->
+        <img src="../fotos de los productos/audifonospantalla.jpg" alt="Auriculares Bluetooth">
+        <h2>Auriculares Bluetooth</h2>
+        <p>Sonido envolvente y libertad sin cables.</p>
+    </div>
+
+    <div class="producto">
+        <!-- Imagen PNG del producto: coloca aquí el archivo PNG para Reloj Inteligente -->
+        <img src="../fotos de los productos/reloj.jpg" alt="Reloj Inteligente S9 Max Ultra">
+        <h2>Reloj Inteligente S9 Max Ultra</h2>
+        <p>Control de salud y notificaciones al alcance de tu mano.</p>
+    </div>
+
+    <div class="producto">
+        <!-- Imagen PNG del producto: coloca aquí el archivo PNG para Auriculares Bluetooth con Pantalla -->
+        <img src="../fotos de los productos/audifonospantalla1.jpg" alt="Auriculares Bluetooth con Pantalla">
+        <h2>Auriculares Bluetooth con Pantalla</h2>
+        <p>Diseño deportivo con pantalla táctil integrada.</p>
+    </div>
+
+    <div class="producto">
+        <!-- Imagen PNG del producto: coloca aquí el archivo PNG para Audífonos Bluetooth 4ta Gen -->
+        <img src="../fotos de los productos/audifonos3.jpg" alt="Audífonos Bluetooth 4ta Gen">
+        <h2>Audífonos Bluetooth 4ta Gen</h2>
+        <p>Sonido nítido y conexión estable para largas horas.</p>
+    </div>
+
+    <div class="producto">
+        <!-- Imagen PNG del producto: coloca aquí el archivo PNG para Hub USB 3.0 -->
+        <img src="../fotos de los productos/adaptador.jpg" alt="7port 3.0 USB Hub">
+        <h2>7port 3.0 USB Hub</h2>
+        <p>Conecta múltiples dispositivos con alta velocidad.</p>
+    </div>
+    <div class="producto">
+    <!-- Imagen PNG del producto: coloca aquí el archivo PNG para PC Dell y Lenovo -->
+    <img src="../fotos de los productos/pc.jpg" alt="PC Dell y Lenovo">
+    <h2>PC Dell y Lenovo</h2>
+    <p>Equipos de cómputo Dell y Lenovo disponibles al por mayor. Calidad y rendimiento garantizados para tu negocio.</p>
+</div>
+
+</section>
+
+</main>
+
+<div class="redes-flotante">
+    <div class="menu-redes" id="menuRedes">
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+    </div>
+    <button class="btn-principal" onclick="toggleRedes()">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </button>
+</div>
+
+<footer>
+    &copy; 2025 JJE Engineers Business Group. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

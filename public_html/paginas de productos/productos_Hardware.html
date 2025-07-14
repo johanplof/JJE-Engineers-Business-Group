@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware - JJE Engineers Business Group</title>
+    <link rel="icon" type="image/x-icon" href="../logos/icono.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../ajustes css/ajustes_productos wardware.css">
+    <script defer src="../ajustes js/afuncion.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">JJE Engineers Business Group</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="menu">
+                <li><a href="../index.html">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#">Consultoría en TI</a></li>
+                        <li><a href="#">Capacitación</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Productos</a>
+                    <ul class="submenu productos-grid">
+                        <li class="dropdown-sub">
+                            <a href="../paginas de productos/productos_Hardware.html">Hardware</a>
+                            <ul class="submenu-sub">
+                                <li><a href="../paginas de productos/productos_Hardware.html">Discos SSD</a></li>
+                                <li><a href="../paginas de productos/productos_Hardware.html">Cables HDMI/USB</a></li>
+                                <li><a href="../paginas de productos/productos_Hardware.html">Cargadores</a></li>
+                                <li><a href="../paginas de productos/productos_Hardware.html">Forros</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-sub">
+                            <a href="../paginas de productos/productos_perifericos.html">Periféricos</a>
+                            <ul class="submenu-sub">
+                                <li><a href="../paginas de productos/productos_perifericos.html">Teclados</a></li>
+                                <li><a href="../paginas de productos/productos_perifericos.html">Mouse</a></li>
+                                <li><a href="../paginas de productos/productos_perifericos.html">Auriculares</a></li>
+                                <li><a href="../paginas de productos/productos_perifericos.html">Cámaras web</a></li>
+                                <li><a href="../paginas de productos/productos_perifericos.html">Micrófonos</a></li>
+                                <li><a href="../paginas de productos/productos_perifericos.html">Audífonos BT</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-sub">
+                            <a href="../paginas de productos/productos_licencias.html">Licencias</a>
+                            <ul class="submenu-sub">
+                                <li><a href="../paginas de productos/productos_licencias.html">Windows 10/11</a></li>
+                                <li><a href="../paginas de productos/productos_licencias.html">Office 365</a></li>
+                                <li><a href="../paginas de productos/productos_licencias.html">Office 2019/2021</a></li>
+                                <li><a href="../paginas de productos/productos_licencias.html">Win Server</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Soporte</a>
+                    <ul class="submenu">
+                        <li><a href="#">Soporte Nivel 1</a></li>
+                        <li><a href="#">Soporte Nivel 2</a></li>
+                        <li><a href="#">Soporte Remoto</a></li>
+                        <li><a href="#">Soporte en Sitio</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../Quienes_somos.html">Nosotros</a></li>
+               
+                <li class="dropdown">
+                    <a href="../inicio_de_sesion.html" onclick="toggleDropdown(event)">Iniciar Sesión</a>
+                    <ul class="submenu">
+                        <li><a href="../login.html">Usuario</a></li>
+                        <li><a href="#">Administrador</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-productos">
+        <h1>Componentes y Tecnología para tu PC</h1>
+        <p>Optimiza tu equipo con productos de alta calidad.</p>
+
+        <section class="galeria-productos">
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="Disco SSD">
+                <h2>Disco SSD 512GB</h2>
+                <p>Almacena tus archivos con velocidad y seguridad.</p>
+            </div>
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="Cables HDMI">
+                <h2>Cables HDMI 4K</h2>
+                <p>Conexiones nítidas y de alta calidad para tus dispositivos.</p>
+            </div>
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="Cargadores universales">
+                <h2>Cargadores Universales</h2>
+                <p>Compatibilidad con múltiples marcas y modelos.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="redes-flotante">
+        <div class="menu-redes" id="menuRedes">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+        </div>
+        <button class="btn-principal" onclick="toggleRedes()">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </button>
+    </div>
+
+    <footer>
+        &copy; 2025 JJE Engineers Business Group. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

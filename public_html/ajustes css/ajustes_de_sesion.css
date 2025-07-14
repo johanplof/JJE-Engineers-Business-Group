@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.consultoria-section {
+    flex: 1;
+    padding: 30px 20px;
+    background: #f4f4f4;
+    text-align: center;
+    min-width: 300px;
+}
+
+.consultoria-section h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.consultoria-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.imagen-box {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.consultoria-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.login-section {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 300px;
+}
+
+.login-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .consultoria-section, .login-section {
+        padding: 20px;
+    }
+}

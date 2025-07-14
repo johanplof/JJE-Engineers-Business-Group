@@ -1,0 +1,216 @@
+/* Fuente base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+/* Menú principal */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover > a {
+    background-color: #005599;
+}
+
+/* Submenús */
+.submenu, .submenu-sub {
+    display: none;
+    position: absolute;
+    background-color: #005599;
+    min-width: 180px;
+    z-index: 999;
+    padding: 0;
+}
+
+nav ul li:hover > .submenu {
+    display: block;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.dropdown-sub:hover .submenu-sub {
+    display: block;
+    left: 100%;
+    top: 0;
+}
+
+/* Menú de hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #003366;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .submenu, .submenu-sub {
+        position: static;
+    }
+
+    .submenu li a, .submenu-sub li a {
+        padding-left: 30px;
+    }
+}
+
+/* Productos */
+.contenedor-productos {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contenedor-productos h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contenedor-productos p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.galeria-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.producto h2 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.producto p {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Redes sociales flotantes */
+.redes-flotante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu-redes {
+    display: none;
+    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-redes a img {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-principal {
+    background-color: #25D366;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-principal img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
